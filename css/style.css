@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Unica+One&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #dbdde2;
+}
+
+h1, h2, h3, a {
+  font-family: 'Kanit', sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: rgb(35, 54, 90)
+}
+
+h3 {
+  font-size: 1.3rem;
+  color: rgb(35, 54, 90)
+}
+
+p {
+  color: rgb(35, 54, 90);
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color:rgb(35, 54, 90);
+}
+
+section {
+  padding: 1vw;
+}
+/* NAV */
+nav {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-bottom: 2px solid rgb(35, 54, 90);
+  padding: 10px 50px;
+  width: 100vw;
+  position: fixed;
+  font-size: 1.2rem;
+}
+
+nav img {
+  flex: 1;
+  border-radius: 10px;
+  max-width: 30px;
+}
+
+nav div {
+  display: flex;
+  flex: 2;
+  justify-content: flex-end;
+  gap: 3vw;
+}
+
+nav a {
+  transition: all 350ms ease-in-out;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav a:hover {
+  background-color: rgb(35, 54, 90);
+  color: white;
+}
+
+/* HEADER */
+header {
+  height: 35vw;
+  background-image:url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding:10vw 25vw;
+  padding-bottom: 1vw;
+}
+
+header a {
+  background-color: rgb(35, 54, 90);
+  color:white;
+  text-align: center;
+  padding: 10px;
+  margin: 0 40vw;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  transition: all 350ms ease-in-out;
+}
+
+header a:hover {
+  background-color: white;
+  color: rgb(35, 54, 90);
+  border-radius: 5px;
+}
+
+header p {
+  color: white;
+}
+/* PERFORMANCES SECTION */
+
+#performances {
+  padding: 3vw 10vw;
+}
+
+#performances .stars {
+  color:  rgb(35, 54, 90);
+}
+
+#performances h3 {
+  margin-bottom: 10px;
+}
+.article-container {
+  display: flex;
+  gap: 30px;
+}
+
+.article-container article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  border: 2px solid rgb(35, 54, 90);
+  border-radius: 10px;
+  flex: 1;
+  transition: all 350ms ease-in-out;
+}
+
+.article-container article:hover {
+  background-color: #acb2c0;
+  transform: scale(1.1);
+}
+
+.article-container article img {
+  width: 100%;
+  height: 15vw;
+  object-fit: cover;
+  border-bottom: 2px solid rgb(35, 54, 90);
+}
+
+article .article-text {
+  padding: 30px;
+  padding-top: 0;
+}
+
+article p {
+  padding-bottom: 10px;
+}
+
+article a {
+  background-color: rgb(35, 54, 90);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 5px;
+  transition: all 350ms ease-in-out;
+}
+
+article a:hover {
+  background-color: white;
+  color: rgb(35, 54, 90);
+}
+
+/* FORM */
+#contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #acb2c0;
+}
+
+form {
+  width: 700px;
+}
+
+form .shared-formcontainer {
+  display: flex;
+}
+
+form .shared-formcontainer input {
+  width: 340px;
+}
+
+form .formfield {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+}
+
+form .formoptions {
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: row;
+  gap: 1vw;
+  padding: 10px;
+}
+
+label {
+  color: rgb(35, 54, 90);
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+span {
+  color: rgb(35, 54, 90);
+  font-weight: bold;
+  padding: 4px;
+}
+
+textarea {
+  margin-bottom: 8px;
+  border-radius: 5px;
+  border: 1px solid rgb(35, 54, 90);
+}
+
+.formfield input,
+.formfield select {
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(35, 54, 90);
+}
+
+select {
+  height: 20px;
+}
+
+button {
+  background-color: rgb(35, 54, 90);
+  color: #edf0f7;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+  margin: 10px;
+  transition: all 350ms ease-in-out;
+}
+
+button:hover {
+  color: rgb(35, 54, 90);
+  background-color: #edf0f7;
+}
+
+input:valid {
+  border: 1px solid rgb(22, 56, 22);
+  background-color:rgb(233, 241, 233);
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  align-items: center;
+  background-color: rgb(35, 54, 90);
+  padding: 50px;
+  gap: 20px;
+}
+
+footer a {
+  color:#edf0f7;
+}
+
+footer p {
+  color: white;
+}
+
+footer img {
+  flex: 1;
+  border-radius: 10px;
+  max-width: 30px;
+}
+
+footer .footer-links {
+  display: flex;
+  flex: 2;
+  justify-content: flex-end;
+  gap: 3vw;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 480px) {
+  /* NAV */
+  nav {
+    flex-direction: column;
+    position: relative;
+    width: 100vw;
+  }
+
+  nav div {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+  }
+
+  nav a {
+    padding: 5px;
+  }
+  /* HEADER */
+  header {
+    height: 50vh;
+  }
+
+  header div {
+    padding: 2vw;
+  }
+
+  header p {
+    padding: 0 10px;
+  }
+
+  header a {
+    margin: 0 20vw;
+  }
+  /* PERFORMANCES SECTION */
+  .article-container {
+    flex-direction: column;
+  }
+
+  .article-container article img {
+    height: 50vw;
+  }
+  /* FORM */
+  form div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    width: 90vw;
+  }
+
+  form .shared-formcontainer input {
+    width: 88vw;
+  }
+  /* FOOTER */
+  footer {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    flex-direction: column;
+  }
+}
+
+

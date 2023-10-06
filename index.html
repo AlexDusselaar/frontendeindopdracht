@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosAlex | Cosplayer & Content Creator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <img src="images/logo.jpeg" alt="logo">
+        <div>
+            <a href="#about-me">About me</a>
+            <a href="#performances">Performances</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+    </nav>
+    <header id="about-me">
+        <div>
+            <h1>Welcome!</h1>
+            <p>My name is Alex, better knows as 'CosAlex', and I'm a competitive cosplayer and content creator from the
+                Netherlands. I've been doing cosplay since 2019 and I started creating content on social media in 2021.
+                As of right now I'm well known with 10,6k followers on TikTok and 700 on Instagram. Most people in the
+                cosplay community know me as 'that one Rosalina cosplayer' because of my performance as Rosalina from
+                Super Mario Galaxy at Heroes Made in Asia 2023. However, before this I was better known from my catwalk
+                as Kagamine Len at Dutch Comic Con 2022, since the video got a lot of views on both TikTok and
+                Instagram.</p>
+        </div>
+        <!-- <a href="...">link</a> -->
+        <a href="#">More info</a>
+    </header>
+    <main>
+        <section id="performances">
+            <h2>Performances</h2>
+            <div class="article-container">
+                <article>
+                    <img src="images/madeinasia.jpg" alt="hmia">
+                    <div class="article-text">
+                        <h3>Heroes Made In Asia 2023</h3>
+                        <div class="stars">&starf; &starf; &starf; &starf; &star;</div>
+                        <p>This performance was my first time ever joining a cosplay competition, and also my first time
+                            on stage at a convention besides some previous exeriences on the catwalk. My act consisted
+                            of a short skit with a dance while cosplaying Rosalina from Super Mario Galaxy.</p>
+                        <a href="https://youtu.be/_GoTnvxxHr4?si=lZ9h31uWSE5IlX9E" target="_blank">Watch</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/comiccon.jpg" alt="dcc">
+                    <div class="article-text">
+                        <h3>Heroes Dutch Comic Con 2023</h3>
+                        <div class="stars">&starf; &starf; &starf; &starf; &starf;</div>
+                        <p>My second time competing and the first time winning something! I won Btrix's judge's
+                            favourite award with my act as Cloud Strife from Final Fantasy 7 Remake. This is the biggest
+                            competition and the biggest stage i've ever performed on, and I hope to be able to compete
+                            at HDCC again sometime in the future.</p>
+                        <a href="https://youtu.be/-59Kbl559WU?si=4Vxfr9MnkcZHBhxA" target="_blank">Watch</a>
+                    </div>
+                </article>
+                <article>
+                    <img src="images/abunai.png" alt="abunai">
+                    <div class="article-text">
+                        <h3>Abunai! 2023</h3>
+                        <div class="stars">&starf; &starf; &starf; &star; &star;</div>
+                        <p>My most recent competition, as Rosalina again except in her her outfit from Mario Tennis
+                            Aces. This was my first time doing a competition that wasn't organised by HYPE-creations, so
+                            it was a very unique experience compared to the other competitions i've been a part of!</p>
+                        <a href="https://youtu.be/OaZrbnpeIWc?si=XLhRAYehB8FJb8xi" target="_blank">Watch</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <div class="shared-formcontainer">
+                    <div class="formfield">
+                        <label for="first-name">First name*</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="First name" required>
+                    </div>
+                    <div class="formfield">
+                        <label for="last-name">Last name*</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Last name" required>
+                    </div>
+                </div>
+                <div class="formfield">
+                    <label for="email">E-mail*</label>
+                    <input type="email" id="email" name="email" placeholder="E-mail" required>
+                </div>
+                <div class="shared-formcontainer">
+                    <div class="formfield">
+                        <label for="first-name">City*</label>
+                        <input type="text" name="city" id="city" placeholder="City" required>
+                    </div>
+                    <div class="formfield">
+                        <label for="birthdate">Birthdate*</label>
+                        <input type="date" id="birthdate" name="birthdate" placeholder="Geboortedatum" required>
+                    </div>
+                </div>
+                <div class="formfield">
+                    <label for="topic">Topic*</label>
+                    <select id="topic" name="topic" required>
+                        <option value="" disabled selected>Pick a topic...</option>
+                        <option value="question">Question</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="sponsorship">Sponsorship</option>
+                    </select>
+                </div>
+                <div class="formfield">
+                    <label for="message">Message*</label>
+                    <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+                </div>
+
+                <span>Sign up for our newsletter?</span>
+                <div class="formoptions">
+                    <input type="radio" id="yes" name="newsletter" value="yes">
+                    <label for="yes">Yes</label>
+
+                    <input type="radio" id="no" name="newsletter" value="no">
+                    <label for="no">No</label>
+                </div>
+                <div class="formoptions">
+                    <input type="checkbox" id="termsandconditions" name="termsandconditions" value="termsandconditions"
+                        required>
+                    <label for="termsandconditions">I agree to the terms & conditions*</label>
+
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+            <img src="images/logo.jpeg" alt="logo">
+            <p>Copyright 2023 CosAlex</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Contact</a>
+        </div>
+    </footer>
+</body>
+
+</html>
